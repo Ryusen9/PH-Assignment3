@@ -25,7 +25,8 @@
     <title>Rinterio</title>
 
 </head>
-<body class="font-family">
+<body class="font-family overflow-hidden">
+    <!-- nav section -->
     <header class="fixed top-0 left-0 w-full py-5">
         <nav class="w-[90%] mx-auto flex items-center justify-between">
             <!-- logo section -->
@@ -52,8 +53,22 @@
                 <button class="btn btn-circle hover:bg-lime-50 lg:hidden" id="openMenu"><i class="ri-menu-line text-2xl text-gray-400"></i></button>
              </div>
 
+              <div class="absolute z-50 top-2 right-2 hidden" id="mobileMenu">
+                <ul class="menu bg-base-200 rounded-box w-56">
+                    <i class="ri-close-line text-3xl ml-2 cursor-pointer hover:text-gray-400 duration-200" id="closeBtn"></i>
+                    <li class="menu-title">Menu</li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+             </div>
+
         </nav>
     </header>
+    <!-- main section -->
+     <main></main>
     
     <!-- !script -->
      <script src="./main.js"></script>
