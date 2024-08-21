@@ -27,10 +27,10 @@
 </head>
 <body class="font-family overflow-hidden">
     <!-- nav section -->
-    <header class="fixed top-0 left-0 w-full py-5">
+    <header class="fixed top-0 left-0 w-full py-5 md:py-6 lg:py-7 z-10">
         <nav class="w-[90%] mx-auto flex items-center justify-between">
             <!-- logo section -->
-            <div class="logo flex justify-center items-center gap-2">
+            <div class="logo flex justify-center items-center gap-2 animate-bounce">
                 <i class="ri-arrow-right-up-line bg-lime-300 py-1 px-2 rounded-full md:py-2 md:px-3 lg:py-3 lg:px-4 text-lg md:text-xl lg:text-2xl"></i>
                 <p class="text-lg md:text-xl lg:text-2xl font-bold">Rinterio</p>
             </div>
@@ -54,7 +54,7 @@
              </div>
 
               <div class="absolute z-50 top-2 right-2 hidden" id="mobileMenu">
-                <ul class="menu bg-base-200 rounded-box w-56">
+                <ul class="menu bg-base-200 rounded-box w-72">
                     <i class="ri-close-line text-3xl ml-2 cursor-pointer hover:text-gray-400 duration-200" id="closeBtn"></i>
                     <li class="menu-title">Menu</li>
                     <li><a>Home</a></li>
@@ -68,7 +68,25 @@
         </nav>
     </header>
     <!-- main section -->
-     <main></main>
+     <main>
+        <!-- !hero section -->
+         <section>
+            <div class="hero min-h-screen">
+                <div class="hero-content text-center flex flex-col">
+                    <div class="imageContainer">
+                        <img src="./assets/banner.png" alt="" class="z-0">
+                    </div>
+                  <div class="w-[80%] mx-auto">
+                    <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <button class="btn bg-lime-200 hover:bg-lime-300 border-lime-400 md:btn-md lg:btn-lg">View Details<i class="ri-arrow-right-up-line bg-lime-400 py-1 px-1 rounded-full shadow-lg hover:translate-x-1 duration-200"></i></button>
+                  </div>
+                </div>
+              </div>
+         </section>
+     </main>
     
     <!-- !script -->
      <script src="./main.js"></script>
