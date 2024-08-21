@@ -28,10 +28,30 @@
 <body class="font-family">
     <header class="fixed top-0 left-0 w-full py-5">
         <nav class="w-[90%] mx-auto flex items-center justify-between">
+            <!-- logo section -->
             <div class="logo flex justify-center items-center gap-2">
                 <i class="ri-arrow-right-up-line bg-lime-300 py-1 px-2 rounded-full md:py-2 md:px-3 lg:py-3 lg:px-4 text-lg md:text-xl lg:text-2xl"></i>
                 <p class="text-lg md:text-xl lg:text-2xl font-bold">Rinterio</p>
             </div>
+            <div class="nav-menu hidden lg:block w-2/5">
+                <ul class="flex justify-between items-center gap-3 w-full">
+                    <li class="text-lg font-semibold ease-in duration-200 text-gray-400 hover:text-gray-800"><a href="">Home</a></li>
+                    <li class="text-lg font-semibold ease-in duration-200 text-gray-400 hover:text-gray-800"><a href="">Services</a></li>
+                    <li class="text-lg font-semibold ease-in duration-200 text-gray-400 hover:text-gray-800"><a href="">About</a></li>
+                    <li class="text-lg font-semibold ease-in duration-200 text-gray-400 hover:text-gray-800"><a href="">Blog</a></li>
+                    <li class="text-lg font-semibold ease-in duration-200 text-gray-400 hover:text-gray-800"><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+             <div class="hamburger flex gap-3">
+                <!-- button group -->
+                <button class="btn btn-circle hover:bg-lime-50 hidden md:block"><i class="ri-search-line text-2xl text-gray-600"></i></button>
+                <button class="btn btn-circle hover:bg-lime-50 hidden md:block"><i class="ri-shopping-cart-2-line text-2xl text-gray-600"></i></button>
+                <button class="btn rounded-2xl bg-lime-400 hover:bg-lime-500 text-black font-semibold hidden md:block">Book Consult <i class="ri-arrow-right-up-line ri-arrow-right-up-line bg-black text-white py-2 px-2 rounded-full ml-1"></i></button>
+                <!-- hamburger -->
+                <button class="btn btn-circle hover:bg-lime-50 lg:hidden" id="openMenu"><i class="ri-menu-line text-2xl text-gray-400"></i></button>
+             </div>
+
         </nav>
     </header>
     
